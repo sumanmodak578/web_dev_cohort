@@ -1,0 +1,175 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #1a1a1a;
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #ff6b6b;
+}
+
+.subtitle {
+  color: #888888;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+  gap: 30px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 500px;
+  background-color: #262626;
+  border: 1px solid #3c3c3c;
+  border-radius: 10px;
+  padding: 20px;
+  /* text-align: center; */
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  font-size: small;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 2em;
+}
+
+.popular-tag {
+  position: absolute;
+  top: -13px;
+  font-size: xx-small;
+  font-weight: bold;
+  background-color: #ffd93d;
+  color: #1a1a1a;
+  border-radius: 25px;
+  padding: 5px 20px;
+}
+
+.price-block {
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 12px;
+  /* letter-spacing: 0.05cm; */
+}
+
+.price {
+  font-size: xx-large;
+  font-weight: 600;
+  color: #ff6b6b;
+}
+
+.period {
+  font-size: x-small;
+  color: #858585;
+  text-transform: uppercase;
+}
+
+.features {
+  height: 150px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.features li {
+  font-size: smaller;
+  list-style-type: none;
+  color: #d9d8d8;
+}
+
+.features li.disabled {
+  color: #595959;
+}
+
+.join-btn {
+  padding: 10px 30px;
+  width: 200px;
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  border-radius: 10px;
+  background-color: unset;
+  font-size: small;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.join-btn:hover {
+  background-color: #603a3a;
+}
+
+/* Custom Class Modifiers */
+.warrior {
+  position: relative;
+  background-color: #312222;
+  border: 1px solid #ff6b6b;
+}
+
+.champion {
+  background-color: #312d1d;
+  border: 1px solid #ffd93d;
+}
+
+.champion .price {
+  color: #ffd93d;
+}
+
+.champion .join-btn {
+  color: #ffd93d;
+  border: 2px solid #ffd93d;
+}
+
+.champion .join-btn:hover {
+  background-color: #807238;
+}

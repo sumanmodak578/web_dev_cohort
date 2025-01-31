@@ -1,0 +1,133 @@
+/* Challenge CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-image: url("./assets/chaicohort.png");
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Navbar styles */
+.navbar {
+  /* Add styles for the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 10px 40px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #00ff9d;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #00ff9d;
+  border-radius: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  margin: 10px;
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+.menu a:hover {
+  color: #00ff9d;
+}
+
+/* Hero section styles */
+.hero {
+  padding: 40px;
+}
+
+.hero-content {
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-content h1 {
+  color: #00fe9c;
+}
+
+.hero-content p {
+  color: #dddddd;
+}
+
+.hero-content img {
+  /* width: 200px; */
+  margin-top: 5px;
+  border: 2px solid #00fe9c;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.enroll-button {
+  margin-top: 5px;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #00fe9c;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.enroll-button:hover {
+  background-color: #19a670;
+  color: #ffffff;
+}
+
+/* Highlights section styles */
+.highlights {
+  height: 250px;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.highlight-card {
+  height: 180px;
+  width: 250px;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+.highlight-card h3 {
+  color: #00fe9c;
+  font-size: medium;
+}
+
+.highlight-card p {
+  font-size: small;
+  text-align: center;
+}

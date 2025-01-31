@@ -1,0 +1,163 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #555;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.content-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content-col h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.content-col p {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.cta-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sr-only {
+  display: none;
+}
+
+.input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-wrapper input:focus {
+  border-color: #007bff;
+}
+
+.demo-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.demo-button:hover {
+  background-color: #0056b3;
+}
+
+/* Trusted by section */
+.brands-section {
+  margin-top: 20px;
+}
+
+.trusted-by {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.brand-logos {
+  display: flex;
+  gap: 20px;
+}
+
+.brand-logo {
+  max-height: 36px;
+  opacity: 0.8;
+}
+
+.brand-logo:hover {
+  opacity: 1;
+}
+
+/* Hero image */
+.image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .content-col h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+}
