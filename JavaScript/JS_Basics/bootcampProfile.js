@@ -2,6 +2,7 @@
 let name = "Suman";
 // Number - integer, float
 let age = 24.3;
+console.log(typeof age);
 // Boolean - true, false
 let isPaid = true;
 
