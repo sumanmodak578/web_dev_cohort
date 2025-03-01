@@ -14,6 +14,6 @@ function addTwo(num1, num2) {
 // bringBrush(4);
 // console.log(addTwo(2, 4));
 
-const n1 = 17;
-const n2 = 4;
-console.log(4 % 2);
+// const n1 = 17;
+// const n2 = 4;
+// console.log(4 % 2);
